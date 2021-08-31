@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const { endsWith } = require('sequelize/types/lib/operators');
 const { Blog, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
