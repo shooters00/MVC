@@ -18,8 +18,6 @@ router.get('/', async (req, res) => {
           model: User,
           attributes: ['username'],
         },
-      ],
-      include: [
         {
           model: Comment,
           attributes: [
@@ -43,25 +41,7 @@ router.post('/', async (req, res) => {
   try {
     const newBlog = await Blog.create({
       ...req.body,
-      user_id: req.session.user_id,
-      include: [
-        {
-          model: User,
-          attributes: ['username'],
-        },
-      ],
-      include: [
-        {
-          model: Comment,
-          attributes: [
-            'id',
-            'description',
-            'created_at',
-            'blog_id',
-            'user_id'
-          ]
-        }
-      ]
+      user_id: req.session.user_id
     });
 
     res.status(200).json(newBlog);

@@ -1,0 +1,12 @@
+{{#if blogs.length}}
+  {{#each blogs as |blog| }}
+    <!-- The following should be in a handlebar file to display a blog -->
+    <div class="card">
+        <div class="card-header">
+            <h5>{{blog.title}}</h5>
+            <p>Posted by {{user.username}} on {{blog.created_at}}</p>
+        </div>
+          <p class="card-body">{{blog.description}}</p>
+  {{/each}}
+  </div>
+ {{/if}}
