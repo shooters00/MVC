@@ -1,0 +1,12 @@
+[
+  {
+    "description": "Interesting",
+    "user_id": 1,
+    "blog_id": 2
+  },
+  {
+    "description": "Very good blog",
+    "user_id": 2,
+    "blog_id": 1
+  }
+]

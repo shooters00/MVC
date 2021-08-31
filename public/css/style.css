@@ -1,24 +1,14 @@
-header, .project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+header {
+  background-color: rgb(49, 18, 18);
 }
 
-.no-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  color: #1b89bc;
-  text-decoration: none;
-  font-size: 100%;
+.card-header {
+  background-color: rgb(49, 18, 18);
+  color:white;
 }
 
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
+.card-body {
+  background-color: white;
+  color: black;
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
-}

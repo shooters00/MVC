@@ -1,0 +1,10 @@
+Home - Show all blogs | blog routes | get /
+Login | user routes | post /login
+Signup | user routes | post /
+Your Dashboard | blog routes | get, where user - doesn't exist
+New Blog Submit | blog routes | post /
+Show Single Blog w/comments and comment button | blog routes | get by id
+Create Comment |comment routes | post /
+Edit post | blog routes | put & delete | delete by id, put doesn't exist (only user that created can edit?)
+
+
